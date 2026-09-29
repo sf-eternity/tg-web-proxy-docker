@@ -6,10 +6,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/lists/*
 
 RUN mkdir /default
-RUN mv \
-    /etc/tproxy-server/config.template.json \
-    /etc/telmet/telmet.template.toml \
-    /default/
+RUN mv /etc/tproxy-server/config.template.json /default/
+RUN mv /etc/telemt/telemt.template.toml /default/
 
 COPY preentrypoint.sh /preentrypoint.sh
 COPY proxy.template /templates/proxy.template

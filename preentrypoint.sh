@@ -1,11 +1,11 @@
 #!/bin/sh
 set -eu
 
-cp /default/telmet.template.toml /etc/telmet/telmet.template.toml
+cp /default/telemt.template.toml /etc/telemt/telemt.template.toml
 
 if [ -n "${PROXY_ENABLED+x}" ] && [ "$PROXY_ENABLED" = "true" ]; then
     envsubst < /templates/proxy.template > /proxy
-    cat /proxy >> /etc/telmet/telmet.template.toml
+    cat /proxy >> /etc/telemt/telemt.template.toml
 fi
 
 cp /default/config.template.json /etc/tproxy-server/config.template.json
