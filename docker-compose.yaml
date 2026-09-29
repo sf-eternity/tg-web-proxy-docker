@@ -6,8 +6,8 @@ services:
     env_file:
       - .env
     ports:
-      - "80:80"
-      - "443:443"
+      - "${LISTENING_PORT_HTTP}:80"
+      - "${LISTENING_PORT_HTTPS}:443"
     volumes:
       - ./site:/srv/tproxy-site:ro
       - ./caddy_data:/data/caddy
