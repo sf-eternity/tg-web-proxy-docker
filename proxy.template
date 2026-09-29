@@ -1,0 +1,8 @@
+
+[[upstreams]]
+type = "$PROXY_TYPE"
+address = "$PROXY_ADDRESS"
+username = "$PROXY_USERNAME"
+password = "$PROXY_PASSWORD"
+enabled = true
+weight = 1
