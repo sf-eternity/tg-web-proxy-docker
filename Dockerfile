@@ -1,7 +1,7 @@
 FROM ghcr.io/sf-eternity/tg-web-proxy-image:1
 
 RUN apt-get update && apt-get install -y \
-    socat jq envsubst \
+    socat jq gettext-base \
     && apt-get clean \
     && rm -rf /var/lib/lists/*
 
