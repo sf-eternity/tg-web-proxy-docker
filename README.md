@@ -61,7 +61,7 @@ PROXY_USERNAME: ""
 PROXY_PASSWORD: ""
 
 # PUBLIC SITE SETTINGS
-# directory with stub site files. Will be ignored if PUBLIC_SITE_URL specified.
+# directory with stub site files. Will be ignored if PUBLIC_SITE_UPSTREAM specified.
 PUBLIC_SITE_DIR: "/srv/tproxy-site"
 # http (not https) url of public site. Example: http://host.docker.internal:5000
 PUBLIC_SITE_UPSTREAM: "" 
