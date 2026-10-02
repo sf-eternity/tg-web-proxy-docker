@@ -50,6 +50,8 @@ TPROXY_HOSTNAME: proxy.example.com
 ACME_EMAIL: you@example.com
 SITE_VARIANT: northwind-field
 # openssl rand -hex 16
+# add "dd" before secret for secure mode
+# example: dd5d533aa5a70dd2199e6f14ae402844f6
 TPROXY_SECRET: ""
 
 # PROXY  SETTINGS
